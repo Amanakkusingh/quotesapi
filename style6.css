@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/woman-walking-in-rain-1612806879.jpg?crop=0.676xw:1.00xh;0.0993xw,0&resize=640:*");
+    width: 655vh;
+    height: 655vh;
+}
+
+header {
+    border: 1px solid rgba(red, green, blue, 0.9);
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: whitesmoke;
+    margin-top: 100px;
+    margin-left: 420px;
+    margin-right: 50%;
+    padding: 40px;
+}
+
+#quoted {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#new {
+    padding: 15px;
+    font-size: 18px;
+    font-style: italic;
+    text-align: right;
+}
+
+#amans {
+    text-align: center;
+    border: 1px solid rgba(red, green, blue, 0.09);
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
+#news {
+    color: dimgrey;
+    font-size: 20px;
+    border: none;
+    align-items: center;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#next {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    background-color: aquamarine;
+    background-color: none;
+    border-radius: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <img src="C:/Users/212322003/Downloads/aman.jpg" alt="" height="60px" width="60px">
+        </div>
+        <div>
+            <div id="quoted">
+                <h1>the quotes</h1>
+            </div>
+        </div>
+        <div id="new">
+
+        </div>
+        <div id="amans">
+            <button id="news">Quotes</button>
+        </div>
+        <div id="nikhil">
+            <button id="next">Tweetnow</button>
+        </div>
+    </header>
+</body>
+<script>
+    const quoted = document.getElementById("quoted")
+    const aman = document.getElementById("new")
+    const news = document.getElementById("news")
+    let result = ""
+    const newquotes = () => {
+        const rum = Math.floor(Math.random() * 10)
+        const newdata = result[rum]
+        quoted.innerText = newdata.text
+        aman.innerText = newdata.author
+    }
+    const tweeter = () => {
+        let add = "https://twitter.com/intent/tweet/?text=newdata.text"
+        window.open(add);
+    }
+
+    const quotes = async() => {
+        let api = "https://type.fit/api/quotes"
+        try {
+            const data = await fetch(api)
+            result = await data.json();
+            newquotes();
+            console.log(result)
+        } catch (error) {
+            console.log(error)
+        }
+
+    }
+    next.addEventListener("click", tweeter)
+    news.addEventListener("click", newquotes);
+    quotes();
+</script>
+
+</html>
